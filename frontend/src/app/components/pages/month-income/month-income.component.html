@@ -1,0 +1,17 @@
+<div class="income">
+    <h2 class="title">Income Statement: {{month}} {{year}}</h2>
+    <nav>
+        <a routerLink="/income/sheet" [ngClass]="{'selected': tab=='sheet'}">Income Sheet</a>
+        <a routerLink="/income/performance" [ngClass]="{'selected': tab=='performance'}">Performance</a>
+    </nav>
+    <div *ngIf="tab=='sheet'" class="sheet">
+        <div>
+            <div class="title">Income</div>
+            <app-item></app-item>
+        </div>
+        <div>
+            <div class="title">Expenses</div>
+            <app-item></app-item>
+        </div>
+    </div>
+</div>

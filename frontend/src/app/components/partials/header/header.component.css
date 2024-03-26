@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 0.2rem;
+    margin: 2rem 1rem;
+    padding: 1rem;
+}
+
+.header nav a{
+    margin-right: 2rem;
+}
+
+a {
+    color: #666;
+}
+
+a:hover{
+    color: #333;
+}
+

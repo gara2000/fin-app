@@ -1,0 +1,40 @@
+.income {
+    margin: 1rem;
+    padding: 1rem;
+    border: solid 2px black;
+    border-radius: 0.5rem;
+    height: 80vh;
+}
+
+nav {
+    padding-bottom: 0.5rem;
+    border-bottom: solid 2px #aaa; 
+}
+
+nav a {
+    margin: 1rem;
+    color: #666;
+}
+
+nav .selected {
+   margin: 1rem; 
+   color: black;
+   padding-bottom: 0.4rem;
+   border-bottom: solid 4px grey;
+}
+
+.sheet {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: solid 1px black; */
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.sheet div {
+    border: sol
+}
+
+.sheet .title {
+    margin-left: 2rem;
+}

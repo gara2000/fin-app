@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ItemService } from '../../../services/item.service';
+import { Item } from '../../../shared/models/item';
 
 @Component({
   selector: 'app-month-income',
@@ -16,8 +18,12 @@ export class MonthIncomeComponent {
   'July', 'August', 'September', 'October', 'November', 'December'
   ];
   tab: string = "sheet";
+  assets: Item[] = [];
+  liabilities: Item[] = [];
 
-  constructor(private activatedRoute: ActivatedRoute){
+  constructor(private activatedRoute: ActivatedRoute,
+              private itemService: ItemService
+              ){
     const currentDate = new Date();
 
     this.month = this.monthNames[currentDate.getMonth()];
@@ -27,5 +33,8 @@ export class MonthIncomeComponent {
       if (params['tab'])
         this.tab = params['tab'];
     })
+
+    this.assets = itemService.getAssets();
+    this.liabilities = itemService.getLiabilities();
   }
 }

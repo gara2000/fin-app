@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Item } from '../../../shared/models/item';
 
 @Component({
   selector: 'app-item',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class ItemComponent {
 
+  @Input() itemInfo!: Item;
+
+  value: number = 0;
+
+  ngOnInit() {
+  }
+
+  modifyValue(event: any) {
+    console.log("New value:", event.target.value);
+  }
 }

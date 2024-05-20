@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-financial-dev-963af-authRole",
+      "UnauthRoleArn": "arn:aws:iam::381491831224:role/amplify-financial-dev-963af-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::381491831224:role/amplify-financial-dev-963af-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-financial-dev-963af-deployment",
+      "UnauthRoleName": "amplify-financial-dev-963af-unauthRole",
+      "StackName": "amplify-financial-dev-963af",
+      "StackId": "arn:aws:cloudformation:us-east-1:381491831224:stack/amplify-financial-dev-963af/e5177140-16c2-11ef-ae84-12f821a4b8bf",
+      "AmplifyAppId": "d1qywkygkbl2zg"
+    }
+  }
+}

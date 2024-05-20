@@ -1,4 +1,4 @@
 <div class="item">
-    <div class="name">Item_name</div>
-    <input type="text" class="value">
+    <div class="name">{{ itemInfo.name }}</div>
+    <input #value="ngModel" type="number" class="value" step="10" [(ngModel)]="itemInfo.currValue" (change)="modifyValue($event)" ngModel>
 </div>

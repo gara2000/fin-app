@@ -1,2 +1,4 @@
 [PROGRESS]
-Create an item component containing the item name and the item value (or two vlues, expected value and real value), where the item value can be changed
+*Create an item component containing the item name and the item value (or two vlues, expected value and real value), where the item value can be changed
+    *Add button to add new item component
+    *Create a form to add new item component

@@ -10,6 +10,11 @@
       "StackName": "amplify-financial-dev-963af",
       "StackId": "arn:aws:cloudformation:us-east-1:381491831224:stack/amplify-financial-dev-963af/e5177140-16c2-11ef-ae84-12f821a4b8bf",
       "AmplifyAppId": "d1qywkygkbl2zg"
+    },
+    "categories": {
+      "auth": {
+        "financialb193facb": {}
+      }
     }
   }
 }

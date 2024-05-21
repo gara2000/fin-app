@@ -1,0 +1,9 @@
+FROM node:21
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm install -g @angular/cli
+RUN npm install -g @aws-amplify/cli
+RUN npm install 

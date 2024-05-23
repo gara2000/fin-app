@@ -1,6 +1,14 @@
-FROM docker_npm_image
+FROM node:20
 
 WORKDIR /app
+
+COPY ./package*.json ./
+
+RUN npm install -g @angular/cli
+RUN npm install -g @aws-amplify/cli
+RUN npm install 
+
+COPY . .
 
 # Define the build arguments
 ARG AMPLIFY
